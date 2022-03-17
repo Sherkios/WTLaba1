@@ -8,13 +8,22 @@
    <title>Грищенко Игорь</title>
 </head>
 
-<body id="alert">
+<body id="laba5">
    <a href="index.html">Возвращение на главную</a>
-   <div class="alertBetwText">
-      <p>Здесь рассказывается о том как мы писали эти строчки</p>
-      <button id="hello">Нажми на меня</button>
-      <p>А здесь рассказывает о том как мы заканчивали писать строчки</p>
-   </div>
+   <h1>Пример простой</h1>
+   <script language="JavaScript" type="text/JavaScript">
+      let width = 10;
+   for (var i=1; i<10; i++) {
+      width = width + 10;
+      line(width);
+   }
+
+   //функция рисование линии
+   function line(width) {
+      document.writeln(`<hr align='center' width='${width}''>`);
+   }
+   
+   </script>
    <header class="header">
 </header>
    
