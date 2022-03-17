@@ -4,7 +4,7 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="css/style.min.css?_v=20220317144449">
+   <link rel="stylesheet" href="css/style.min.css?_v=20220317145223">
    <title>Грищенко Игорь</title>
 </head>
 
@@ -14,20 +14,29 @@
       <p>Здесь рассказывается о том как мы писали эти строчки</p>
       <button id="hello">Нажми на меня</button>
       <script>
-         //alert("Добро пожаловать на скромный сайт.");
+
+         // Вывод сообщения при заходе
+         alert("Добро пожаловать на скромный сайт.");
+
+         // Выполнение функции при нажатие на кнопку
          document.getElementById("hello").onclick = function () {
-            let element = document.querySelectorAll('.stroka');
+
             alert("Добро пожаловать в межстрочие.");
 
             //Создаем элемент, который выведем после завершения alert
             let p = document.createElement('p');
             p.innerHTML = "Добро пожаловать в межстрочие"
-
             p.className = "stroka";
+
+            //Ищем уже созданные элементы
+            let element = document.querySelectorAll('.stroka');
+
+            // Удаляем лишние элементы
             if (element.length > 0) {
                element.forEach(e => e.remove());
             }
 
+            // Добавляем текст при закрытие диалогового окна
             this.after(p);
          }
       </script>
@@ -36,7 +45,7 @@
    <header class="header">
 </header>
    
-   <script src="js/app.min.js?_v=20220317144449"></script>
+   <script src="js/app.min.js?_v=20220317145223"></script>
 </body>
 
 </html>
