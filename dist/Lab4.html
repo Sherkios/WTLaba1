@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/style.min.css?_v=20220317153211">
+   <title>Грищенко Игорь</title>
+</head>
+
+<body id="laba4">
+   <a href="index.html">Возвращение на главную</a>
+
+   <script language="JavaScript" type="text/JavaScript">
+      let x, y;
+      x=parseInt(prompt("Введите значение х",'')); // метод parseInt() переводит строку в целое
+      y=parseInt(prompt("Введите значение у",'')); // число
+      if(x<y) {
+      alert("Максимальное число - y")
+      } else if(x == y) {
+         alert("Введенные числа равны");
+      } else {
+      alert("Максимальное число - x");
+      } 
+
+      //Задание с паролем
+      let password = "123";
+
+      //Просим ввести пароль
+      let input = prompt("Введите пароль");
+
+      // Проверка пароля
+      if (input == password) {
+         alert("Пароль верен")
+      } else {
+         alert("Пароль неверен")
+      }
+   </script>
+
+   <header class="header">
+</header>
+   
+   <script src="js/app.min.js?_v=20220317153211"></script>
+</body>
+
+</html>
